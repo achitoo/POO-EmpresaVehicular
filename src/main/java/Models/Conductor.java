@@ -1,49 +1,50 @@
 package Models;
 
 public class Conductor {
-    private String placa;
-    private String marca;
-    private String modelo;
-    private int CapacidadPasajeros;
-    enum TipoVehiculo{auto,moto,camioneta}
+    private String nombreConductor;
+    private String licencia;
+    private int aniosExperiencia;
+    private Vehiculo vehiculo;
 
-    public Conductor(String placa, String marca, String modelo, int capacidadPasajeros) {
-        this.placa = placa;
-        this.marca = marca;
-        this.modelo = modelo;
-        CapacidadPasajeros = capacidadPasajeros;
+    public String getNombreConductor(String nombreConductor) {
+        return nombreConductor;
     }
 
-    public String getPlaca() {
-        return placa;
+    public void setNombreConductor(String nombreConductor) {
+        this.nombreConductor = nombreConductor;
     }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    public String getLicencia() {
+        return licencia;
     }
 
-    public String getMarca() {
-        return marca;
+    public void setLicencia(String licencia) {
+        this.licencia = licencia;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public int getAniosExperiencia() {
+        return aniosExperiencia;
     }
 
-    public String getModelo() {
-        return modelo;
+    public void setAniosExperiencia(int aniosExperiencia) {
+        this.aniosExperiencia = aniosExperiencia;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public Vehiculo getVehiculo() {
+        return vehiculo;
     }
 
-    public int getCapacidadPasajeros() {
-        return CapacidadPasajeros;
+    public void setVehiculo(Vehiculo vehiculo) {
+        this.vehiculo = vehiculo;
     }
 
-    public void setCapacidadPasajeros(int capacidadPasajeros) {
-        CapacidadPasajeros = capacidadPasajeros;
+    public Conductor(String nombreConductor, String licencia, int aniosExperiencia, Vehiculo vehiculo) {
+        this.nombreConductor = nombreConductor;
+        this.licencia = licencia;
+        this.aniosExperiencia = aniosExperiencia;
+        this.vehiculo = vehiculo;
+
+
     }
 }
 
